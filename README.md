@@ -1,20 +1,20 @@
-# Localisation Optimale
+# Optimal Location
 
-Ce projet implémente plusieurs algorithmes d'optimisation pour résoudre le problème de localisation optimale, en utilisant différentes approches métaheuristiques.
+This project implements several optimization algorithms to solve the optimal location problem using different metaheuristic approaches.
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-- Implémentation de quatre algorithmes d'optimisation :
-  - Algorithme Génétique
-  - Recuit Simulé
-  - Recherche Tabou
-  - Optimisation par Essaim Particulaire
-- Interface web interactive
-- Visualisation des résultats
-- Comparaison des performances des algorithmes
-- Documentation détaillée des algorithmes
+- Implementation of four optimization algorithms:
+  - Genetic Algorithm
+  - Simulated Annealing
+  - Tabu Search
+  - Particle Swarm Optimization
+- Interactive web interface
+- Results visualization
+- Algorithm performance comparison
+- Detailed algorithm documentation
 
-## 📋 Prérequis
+## 📋 Prerequisites
 
 - Python 3.8+
 - Flask
@@ -26,80 +26,76 @@ Ce projet implémente plusieurs algorithmes d'optimisation pour résoudre le pro
 
 ## 🛠️ Installation
 
-1. Clonez le dépôt :
-```bash
-git clone https://github.com/votre-username/localisation-optimale.git
-cd localisation-optimale
-```
+1. Clone the repository:
 
-2. Installez les dépendances :
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🏃‍♂️ Utilisation
+## 🏃‍♂️ Usage
 
-1. Lancez l'application Flask :
+1. Launch the Flask application:
 ```bash
 python app.py
 ```
 
-2. Accédez à l'application dans votre navigateur :
+2. Access the application in your browser:
 ```
 http://localhost:5000
 ```
 
-## 📊 Algorithmes Implémentés
+## 📊 Implemented Algorithms
 
-### 1. Algorithme Génétique
-- **Complexité Temporelle** : O(g * p * n²)
-  - g : nombre de générations
-  - p : taille de la population
-  - n : nombre de villes
-- **Conditions d'Arrêt** :
-  - Nombre maximum de générations atteint
-  - Convergence de la population
-  - Solution optimale trouvée
+### 1. Genetic Algorithm
+- **Time Complexity**: O(g * p * n²)
+  - g: number of generations
+  - p: population size
+  - n: number of cities
+- **Stop Conditions**:
+  - Maximum number of generations reached
+  - Population convergence
+  - Optimal solution found
 
-### 2. Recuit Simulé
-- **Complexité Temporelle** : O(i * n²)
-  - i : nombre d'itérations
-  - n : nombre de villes
-- **Conditions d'Arrêt** :
-  - Température minimale atteinte
-  - Nombre maximum d'itérations
-  - Pas d'amélioration significative
+### 2. Simulated Annealing
+- **Time Complexity**: O(i * n²)
+  - i: number of iterations
+  - n: number of cities
+- **Stop Conditions**:
+  - Minimum temperature reached
+  - Maximum number of iterations
+  - No significant improvement
 
-### 3. Recherche Tabou
-- **Complexité Temporelle** : O(i * n²)
-  - i : nombre d'itérations
-  - n : nombre de villes
-- **Conditions d'Arrêt** :
-  - Nombre maximum d'itérations
-  - Liste taboue saturée
-  - Pas d'amélioration
+### 3. Tabu Search
+- **Time Complexity**: O(i * n²)
+  - i: number of iterations
+  - n: number of cities
+- **Stop Conditions**:
+  - Maximum number of iterations
+  - Tabu list saturated
+  - No improvement
 
-### 4. Optimisation par Essaim Particulaire
-- **Complexité Temporelle** : O(i * p * n²)
-  - i : nombre d'itérations
-  - p : nombre de particules
-  - n : nombre de villes
-- **Conditions d'Arrêt** :
-  - Nombre maximum d'itérations
-  - Convergence des particules
-  - Solution optimale trouvée
+### 4. Particle Swarm Optimization
+- **Time Complexity**: O(i * p * n²)
+  - i: number of iterations
+  - p: number of particles
+  - n: number of cities
+- **Stop Conditions**:
+  - Maximum number of iterations
+  - Particle convergence
+  - Optimal solution found
 
-## 👥 Équipe
+## 👥 Team
 
 - **Mohamed Dhia Alaya**
 - **Hamza Ben Ali**
 - **Mohamed Taher**
 - **Louay Ghnima**
 
-## 📝 Structure du Projet
+## 📝 Project Structure
 
 ```
-localisation-optimale/
+optimal-location/
 ├── algorithms/
 │   ├── genetic_algorithm.py
 │   ├── simulated_annealing.py
@@ -117,38 +113,31 @@ localisation-optimale/
 └── README.md
 ```
 
-## 📈 Comparaison des Algorithmes
+## 📈 Algorithm Comparison
 
-### Critères d'Évaluation
-1. **Qualité de la Solution**
-   - Distance totale de l'itinéraire
-   - Score de distance (0-100)
+### Evaluation Criteria
+1. **Solution Quality**
+   - Total route distance
+   - Distance score (0-100)
 
 2. **Performance**
-   - Temps d'exécution
-   - Score de vitesse (0-100)
+   - Execution time
+   - Speed score (0-100)
 
-3. **Score Global**
-   - Moyenne pondérée des scores de distance et de vitesse
+3. **Overall Score**
+   - Weighted average of distance and speed scores
 
-### Meilleurs Algorithmes
-- **Meilleur pour la Qualité** : Algorithme Génétique
-- **Meilleur pour la Vitesse** : Recuit Simulé
-- **Meilleur Global** : Recuit Simulé
+### Best Algorithms
+- **Best for Quality**: Genetic Algorithm
+- **Best for Speed**: Simulated Annealing
+- **Best Overall**: Simulated Annealing
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité
-3. Commiter vos changements
-4. Pousser vers la branche
-5. Ouvrir une Pull Request
+Contributions are welcome! Feel free to:
+1. Fork the project
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 📞 Contact
-
-Pour toute question ou suggestion, n'hésitez pas à nous contacter à [votre-email@example.com](mailto:votre-email@example.com)

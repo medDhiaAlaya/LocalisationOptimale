@@ -8,8 +8,6 @@ Time Complexity: O(i * n²)
 - i: number of iterations
 - n: number of cities
 
-Author: Your Name
-Date: 2024
 """
 
 import numpy as np
